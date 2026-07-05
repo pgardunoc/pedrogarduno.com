@@ -8,7 +8,6 @@ This is Pedro Garduno's personal resume/portfolio website hosted on GitHub Pages
 - Self-hosted Geist / Geist Mono fonts in `assets/fonts/` (woff2, variable weights)
 - Resume PDF at `assets/Resume-PedroGarduno.pdf` (linked from hero and footer)
 - Google Analytics: G-TF8428JCHL
-- Legacy Bootstrap-era files (`assets/vendor/`, `assets/css/`, `assets/js/`, `portfolio-details.html`, `forms/`) are unused by the current page
 
 ## Key Info
 - Pedro is a Senior Software Engineer at The Walt Disney Studios (Oct 2025 - Present)
