@@ -11,7 +11,7 @@ This is Pedro Garduno's personal resume/portfolio website hosted on GitHub Pages
 
 ## Key Info
 - Pedro is a Senior Software Engineer at The Walt Disney Studios (Oct 2025 - Present)
-- Previously: Remitly, Zappos, Oracle — 16+ years of experience
+- Previously: Edward Jones (Dec 2022–Jul 2025), Zappos (2014–2016), Oracle (2021–2022) — 18+ years of experience
 - Founder of four live products: StoryKept (storykept.com), Solid Remote Jobs (solidremotejobs.com), JetLag XI (jetlagxi.com), VettLab (vettlab.io)
 - LinkedIn: https://www.linkedin.com/in/pgarduno
 - Email: pedrodev7@gmail.com

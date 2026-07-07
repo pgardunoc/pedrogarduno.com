@@ -1,6 +1,6 @@
 # pedrogarduno.com
 
-Personal site of Pedro Garduno — Senior Software Engineer & Founder. Hosted on GitHub Pages at [pedrogarduno.com](https://pedrogarduno.com) (pedrogarduno.net redirects here).
+Personal site of Pedro Garduno — Senior Software Engineer at The Walt Disney Studios & Founder. Hosted on GitHub Pages at [pedrogarduno.com](https://pedrogarduno.com) (pedrogarduno.net redirects here).
 
 ## Stack
 
