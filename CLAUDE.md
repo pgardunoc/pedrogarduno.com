@@ -14,7 +14,7 @@ This is Pedro Garduno's personal resume/portfolio website hosted on GitHub Pages
 - Previously: Edward Jones (Dec 2022–Jul 2025), Zappos (2014–2016), Oracle (2021–2022) — 18+ years of experience
 - Founder of four live products: StoryKept (storykept.com), Solid Remote Jobs (solidremotejobs.com), JetLag XI (jetlagxi.com), VettLab (vettlab.io)
 - LinkedIn: https://www.linkedin.com/in/pgarduno
-- Email: pedrodev7@gmail.com
+- Email: pgardunoc@gmail.com (canonical — pedrodev7@gmail.com is an alternate, do not use it publicly)
 - Tech: Kotlin, Java, Spring Boot, Docker, Postgres, AWS, Kubernetes, Redis
 
 ## Design Goals
