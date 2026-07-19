@@ -31,20 +31,9 @@ public/
 
 ## Publishing a post
 
-1. Create `src/content/blog/my-post-slug.md` — the filename becomes the URL (`/blog/my-post-slug`)
-2. Fill in the frontmatter:
+Create `src/content/blog/my-post-slug.md` with `title` / `description` / `pubDate` frontmatter, commit, push to `master` — live in about a minute. Add `draft: true` while writing (renders in dev only).
 
-   ```yaml
-   ---
-   title: "Post title"
-   description: "One-two sentences — used in the index, meta tags, OG unfurls, and RSS."
-   pubDate: 2026-07-19
-   ---
-   ```
-
-   Add `draft: true` to keep it out of production while writing — drafts render in `npm run dev` (tagged DRAFT on the index) but are never built.
-
-3. Commit and push. Vercel builds and deploys automatically; push a branch instead to get a preview URL first.
+**Full guide — frontmatter reference, drafts/previews, images, the LinkedIn flow, rollbacks: [PUBLISHING.md](PUBLISHING.md)**
 
 ## Developing
 
