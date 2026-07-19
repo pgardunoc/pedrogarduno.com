@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base
+  title="Pedro Garduno — Senior Software Engineer & Founder"
+  description="Senior Software Engineer at Disney Studios. 18+ years shipping production systems at Disney, Oracle, Zappos, and Edward Jones. Founder of four live products."
+>
+  <script slot="head" is:inline type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://pedrogarduno.com/#website",
+        "url": "https://pedrogarduno.com/",
+        "name": "Pedro Garduno",
+        "publisher": { "@id": "https://pedrogarduno.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://pedrogarduno.com/#person",
+        "name": "Pedro Garduno",
+        "url": "https://pedrogarduno.com/",
+        "image": "https://pedrogarduno.com/assets/img/og-image.png",
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "The Walt Disney Studios" },
+        "email": "mailto:pgardunoc@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/pgarduno/",
+          "https://github.com/pgardunoc",
+          "https://x.com/pgardunoc",
+          "https://stackoverflow.com/users/1492159/pgardunoc"
+        ],
+        "knowsAbout": ["Kotlin", "Java", "Spring Boot", "AWS", "Kubernetes", "PostgreSQL", "Redis", "AI agents", "Agentic architecture", "Claude Code"],
+        "owns": [
+          { "@type": "WebSite", "name": "StoryKept", "url": "https://www.storykept.com" },
+          { "@type": "WebSite", "name": "Solid Remote Jobs", "url": "https://www.solidremotejobs.com" },
+          { "@type": "WebSite", "name": "JetLag XI", "url": "https://www.jetlagxi.com" },
+          { "@type": "WebSite", "name": "VettLab", "url": "https://www.vettlab.io" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- hero -->
+  <div class="hero">
+    <div class="hero-kicker">Senior Software Engineer · Founder</div>
+    <h1>Pedro Garduno</h1>
+    <p>18+ years shipping production systems at <span>The Walt Disney Studios</span>, <span>Edward Jones</span>, <span>Oracle</span>, and <span>Zappos</span>. AI-first development — Claude Code, agents, agentic architecture.</p>
+    <p class="last">Outside the day job: <span>four products, live in production</span> — built, shipped, and maintained solo.</p>
+    <div class="hero-cta">
+      <a class="btn-primary" href="#projects">See what I've built</a>
+      <a class="btn-secondary" href="/assets/Resume-PedroGarduno.pdf" download>Download resume ↓</a>
+      <a class="btn-secondary" rel="me" href="https://www.linkedin.com/in/pgarduno/">LinkedIn →</a>
+    </div>
+  </div>
+
+  <!-- projects -->
+  <div id="projects" class="section">
+    <div class="section-head">
+      <h2>Founder — built &amp; maintained</h2>
+      <div class="section-meta">4 products · all live</div>
+    </div>
+    <div class="projects-grid">
+      <a class="card" href="https://www.storykept.com">
+        <div class="card-head">
+          <div class="card-name">StoryKept</div>
+          <div class="card-live"><i></i>LIVE</div>
+        </div>
+        <p>A private, searchable archive of the people you love — ask a question, hear them answer in their own voice. No AI-written words, ever.</p>
+        <div class="card-domain">storykept.com ↗</div>
+      </a>
+      <a class="card" href="https://www.solidremotejobs.com">
+        <div class="card-head">
+          <div class="card-name">Solid Remote Jobs</div>
+          <div class="card-live"><i></i>LIVE</div>
+        </div>
+        <p>Remote-jobs platform with automated data collection, ML-powered listing standardization, and real-time search across a nationwide market.</p>
+        <div class="card-domain">solidremotejobs.com ↗</div>
+      </a>
+      <a class="card" href="https://www.jetlagxi.com">
+        <div class="card-head">
+          <div class="card-name">JetLag XI</div>
+          <div class="card-live"><i></i>LIVE</div>
+        </div>
+        <p>World Cup 2026 difficulty model — travel logistics, Elo strength, and a 10,000-run Monte Carlo simulation with a public calibration record.</p>
+        <div class="card-domain">jetlagxi.com ↗</div>
+      </a>
+      <a class="card" href="https://www.vettlab.io">
+        <div class="card-head">
+          <div class="card-name">VettLab</div>
+          <div class="card-live"><i></i>LIVE</div>
+        </div>
+        <p>Scouting reports for engineering hires — public-source intelligence, graded verdicts, and a recruiting angle, delivered in 24–48 hours.</p>
+        <div class="card-domain">vettlab.io ↗</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- experience -->
+  <div class="section">
+    <div class="section-head">
+      <h2>Experience</h2>
+    </div>
+    <div class="exp">
+      <div class="exp-row">
+        <div class="exp-company">The Walt Disney Studios</div>
+        <div class="exp-role">Senior Software Engineer — streaming platform components, AI-powered delivery. Kotlin · Spring Boot · AWS · Kubernetes</div>
+        <div class="exp-when now">2025 — now</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-company">Edward Jones</div>
+        <div class="exp-role">Senior Software Engineer — microservices modernization, MuleSoft ESB integration. Java · Spring Boot · Kotlin · React · Kubernetes</div>
+        <div class="exp-when">2022 — 2025</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-company">Oracle</div>
+        <div class="exp-role">Senior Software Engineer — enterprise platform services</div>
+        <div class="exp-when">2021 — 2022</div>
+      </div>
+      <div class="exp-row">
+        <div class="exp-company">Zappos</div>
+        <div class="exp-role">Senior Software Engineer — e-commerce platform systems</div>
+        <div class="exp-when">2014 — 2016</div>
+      </div>
+    </div>
+  </div>
+</Base>

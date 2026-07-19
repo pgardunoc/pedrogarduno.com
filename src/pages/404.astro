@@ -1,3 +1,6 @@
+---
+// Standalone page — intentionally does not use Base.astro (centered, no nav/footer).
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>404 — Pedro Garduno</title>
   <meta name="robots" content="noindex">
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/favicon.png" rel="icon">
   <style>
     @font-face { font-family: 'Geist'; font-style: normal; font-weight: 400 700; font-display: swap;
-      src: url("assets/fonts/geist-latin.woff2") format('woff2'); }
+      src: url("/assets/fonts/geist-latin.woff2") format('woff2'); }
     @font-face { font-family: 'Geist Mono'; font-style: normal; font-weight: 400 500; font-display: swap;
-      src: url("assets/fonts/geist-mono-latin.woff2") format('woff2'); }
+      src: url("/assets/fonts/geist-mono-latin.woff2") format('woff2'); }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: #0a0a0b; }
     body { font-family: 'Geist', system-ui, sans-serif; color: #ececee; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
@@ -21,6 +24,14 @@
     a { display: inline-block; background: #ececee; color: #0a0a0b; font: 500 14px 'Geist', sans-serif; padding: 11px 20px; border-radius: 7px; text-decoration: none; }
     a:hover { background: #fff; }
   </style>
+  <!-- Google Analytics -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-TF8428JCHL"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TF8428JCHL');
+  </script>
 </head>
 <body>
   <div class="box">

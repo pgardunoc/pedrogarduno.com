@@ -1,13 +1,16 @@
 # Pedro Garduno - Personal Website
 
 ## About
-This is Pedro Garduno's personal resume/portfolio website hosted on GitHub Pages at https://pedrogarduno.com (repo: pgardunoc.github.io). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding.
+This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Vercel at https://pedrogarduno.com (repo: pgardunoc.github.io). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding.
 
 ## Stack
-- Single static `index.html` — no frameworks, no build step, all CSS inline in `<head>`
-- Self-hosted Geist / Geist Mono fonts in `assets/fonts/` (woff2, variable weights)
-- Resume PDF at `assets/Resume-PedroGarduno.pdf` (linked from hero and footer)
-- Google Analytics: G-TF8428JCHL
+- Astro, static output only — no SSR, no adapter, zero client JS except Google Analytics
+- Shared layout `src/layouts/Base.astro` (head/meta/OG, fonts, GA, nav, footer); all CSS in `src/styles/global.css`
+- Blog: markdown posts in `src/content/blog/*.md` (frontmatter: title, description, pubDate, draft). Drafts render in dev only. RSS at `/rss.xml`, sitemap at `/sitemap-index.xml`
+- Self-hosted Geist / Geist Mono fonts in `public/assets/fonts/` (woff2, variable weights)
+- Resume PDF at `public/assets/Resume-PedroGarduno.pdf` (linked from hero and footer) — URL path `/assets/Resume-PedroGarduno.pdf` must never break
+- Google Analytics: G-TF8428JCHL (in Base.astro and 404.astro — keep on every page)
+- Node 20+ (`.nvmrc`), deps: astro, @astrojs/rss, @astrojs/sitemap only
 
 ## Key Info
 - Pedro is a Senior Software Engineer at The Walt Disney Studios (Oct 2025 - Present)
