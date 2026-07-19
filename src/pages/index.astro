@@ -1,5 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+// Newest published posts; drafts visible in dev only, same rule as the blog index.
+// The whole section is omitted when there is nothing to show.
+const posts = (
+  await getCollection('blog', ({ data }) => (import.meta.env.PROD ? !data.draft : true))
+)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 ---
 <Base
   title="Pedro Garduno — Senior Software Engineer & Founder"
@@ -126,4 +138,40 @@ import Base from '../layouts/Base.astro';
       </div>
     </div>
   </div>
+
+  <!-- blog -->
+  {posts.length > 0 && (
+    <div class="section">
+      <div class="section-head">
+        <h2>Latest from the blog</h2>
+        <div class="section-meta"><a class="all-posts" href="/blog">all posts →</a></div>
+      </div>
+      <div class="home-posts">
+        {posts.map((post) => (
+          <a class="post-row" href={`/blog/${post.id}/`}>
+            <div>
+              <div class="post-title">{post.data.title}{post.data.draft && <span class="draft-tag">DRAFT</span>}</div>
+              <p class="post-desc">{post.data.description}</p>
+            </div>
+            <div class="post-date">{fmt(post.data.pubDate)}</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
 </Base>
+
+<style>
+  .all-posts { color: var(--accent); }
+  .home-posts { display: flex; flex-direction: column; }
+  .post-row { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,.07); }
+  .post-row:last-child { border-bottom: none; }
+  .post-title { font: 600 17px 'Geist', sans-serif; color: #fafafa; margin-bottom: 8px; }
+  .post-row:hover .post-title { color: var(--accent); }
+  .draft-tag { font: 500 10px 'Geist Mono', monospace; color: #0a0a0b; background: var(--accent); border-radius: 4px; padding: 2px 6px; margin-left: 10px; vertical-align: middle; }
+  .post-desc { margin: 0; font: 400 14px/1.55 'Geist', sans-serif; color: #a8a8b0; max-width: 640px; }
+  .post-date { font: 400 12px 'Geist Mono', monospace; color: #8a8a93; }
+  @media (max-width: 820px) {
+    .post-row { grid-template-columns: 1fr; gap: 8px; }
+  }
+</style>
