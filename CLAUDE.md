@@ -1,7 +1,7 @@
 # Pedro Garduno - Personal Website
 
 ## About
-This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Vercel at https://pedrogarduno.com (repo: pgardunoc.github.io). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding.
+This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Vercel at https://pedrogarduno.com (repo: pgardunoc/pedrogarduno.com). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding.
 
 ## Stack
 - Astro, static output only — no SSR, no adapter, zero client JS except Google Analytics
