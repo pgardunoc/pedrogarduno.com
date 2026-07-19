@@ -20,6 +20,10 @@ This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Ve
 - Email: pgardunoc@gmail.com (canonical — pedrodev7@gmail.com is an alternate, do not use it publicly)
 - Tech: Kotlin, Java, Spring Boot, Docker, Postgres, AWS, Kubernetes, Redis
 
+## Blog Authorship — Hard Rule
+- Blog posts (`src/content/blog/*.md`) are written by Pedro personally. **Never generate, draft, or ghost-write post content** — not even outlines or "starter text" — unless Pedro explicitly asks for help with a specific passage. Mechanical assistance is fine when asked: frontmatter, typo/grammar fixes, formatting, code-block syntax.
+- This is a public commitment (see PUBLISHING.md "Authorship") and mirrors StoryKept's "No AI-written words, ever" standard.
+
 ## Design Goals
 - Dark, minimal, high-conversion layout (Geist type, #4ade80 green accent)
 - Hero → founder projects → experience → contact footer

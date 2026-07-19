@@ -2,6 +2,10 @@
 
 The whole flow: **create one `.md` file → fill the frontmatter → push to `master`.** Vercel builds and deploys in about a minute. Everything else — blog index, RSS feed, sitemap, meta/OG tags — updates automatically from that one file.
 
+## Authorship
+
+**Every post on this blog is written by me, Pedro Garduno — a human.** No AI-generated or AI-drafted post content, ever. AI tooling (Claude Code) helps build and maintain the *site itself* — the code, the layouts, this documentation — but the words in `src/content/blog/` are mine. That's the same standard I hold my products to (StoryKept's promise is literally "No AI-written words, ever"), and the whole point of a build log is that it's a first-hand account.
+
 ## TL;DR
 
 ```bash
