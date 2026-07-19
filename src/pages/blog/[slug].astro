@@ -13,6 +13,24 @@ const { Content } = await render(post);
 
 const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+
+const postUrl = new URL(`/blog/${post.id}/`, Astro.site);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.pubDate.toISOString(),
+  url: postUrl,
+  mainEntityOfPage: postUrl,
+  image: new URL('/assets/img/og-image.png', Astro.site),
+  author: {
+    '@type': 'Person',
+    '@id': 'https://pedrogarduno.com/#person',
+    name: 'Pedro Garduno',
+    url: 'https://pedrogarduno.com/',
+  },
+};
 ---
 <Base
   title={`${post.data.title} — Pedro Garduno`}
@@ -20,6 +38,7 @@ const fmt = (d: Date) =>
   ogType="article"
   pubDate={post.data.pubDate}
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <article class="post">
     <header>
       <div class="post-kicker">
