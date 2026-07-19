@@ -9,7 +9,7 @@ The whole flow: **create one `.md` file → fill the frontmatter → push to `ma
 ## TL;DR
 
 ```bash
-cd ~/code/pgardunoc.github.io          # local folder still has the old repo name
+cd ~/code/pedrogarduno.com
 nvm use                                 # needs Node 20+ (.nvmrc says 22)
 # create src/content/blog/my-post.md (see frontmatter below)
 npm run dev                             # preview at localhost:4321/blog
