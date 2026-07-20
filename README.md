@@ -17,7 +17,7 @@ src/
   layouts/Base.astro              shared head, meta/OG, fonts, GA, nav, footer
   styles/global.css               all site CSS
   pages/
-    index.astro                   the one-pager
+    index.astro                   home page (hero, projects, experience, latest posts)
     404.astro                     not-found page
     blog/index.astro              blog index (newest first, drafts excluded)
     blog/[slug].astro             post pages

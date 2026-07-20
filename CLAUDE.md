@@ -1,7 +1,7 @@
 # Pedro Garduno - Personal Website
 
 ## About
-This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Vercel at https://pedrogarduno.com (repo: pgardunoc/pedrogarduno.com). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding.
+This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Vercel at https://pedrogarduno.com (repo: pgardunoc/pedrogarduno.com). The .net domain (pedrogarduno.net) redirects to .com via GoDaddy domain forwarding. GitHub Pages on the repo is disabled (July 2026 — the site used to deploy there; Vercel is the only deploy target now). The site is registered in Google Search Console; `www` and `http` 308-redirect to the naked https domain.
 
 ## Stack
 - Astro, static output only — no SSR, no adapter, zero client JS except Google Analytics
@@ -26,6 +26,6 @@ This is Pedro Garduno's personal resume/portfolio website + blog, deployed on Ve
 
 ## Design Goals
 - Dark, minimal, high-conversion layout (Geist type, #4ade80 green accent)
-- Hero → founder projects → experience → contact footer
+- Hero → founder projects → experience → latest blog posts (section auto-hides until a post is published) → contact footer
 - Prominent LinkedIn link, resume download, and contact info
 - Mobile-responsive (single media query at 820px)

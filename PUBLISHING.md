@@ -89,6 +89,7 @@ Three preview tiers, in order of friction:
 ## What updates automatically on every deploy
 
 - `/blog` index (newest first, drafts excluded)
+- Home page "Latest from the blog" section (3 newest posts; hidden while no posts are published)
 - `/rss.xml` feed
 - `/sitemap-index.xml` (Google re-crawls it on its own schedule)
 - Per-post meta tags, Open Graph tags, canonical URL
