@@ -6,11 +6,13 @@ interface Props {
   description: string;
   ogType?: 'website' | 'article';
   pubDate?: Date;
+  // Optional per-page social-card image (absolute path). Must be 1200x630. Falls back to the site card.
+  ogImage?: string;
 }
 
-const { title, description, ogType = 'website', pubDate } = Astro.props;
+const { title, description, ogType = 'website', pubDate, ogImage: ogImageProp } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/assets/img/og-image.png', Astro.site);
+const ogImage = new URL(ogImageProp ?? '/assets/img/og-image.png', Astro.site);
 ---
 <!DOCTYPE html>
 <html lang="en">

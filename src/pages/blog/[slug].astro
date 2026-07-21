@@ -23,7 +23,7 @@ const jsonLd = {
   datePublished: post.data.pubDate.toISOString(),
   url: postUrl,
   mainEntityOfPage: postUrl,
-  image: new URL('/assets/img/og-image.png', Astro.site),
+  image: new URL(post.data.ogImage ?? '/assets/img/og-image.png', Astro.site),
   author: {
     '@type': 'Person',
     '@id': 'https://pedrogarduno.com/#person',
@@ -37,6 +37,7 @@ const jsonLd = {
   description={post.data.description}
   ogType="article"
   pubDate={post.data.pubDate}
+  ogImage={post.data.ogImage}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <article class="post">
