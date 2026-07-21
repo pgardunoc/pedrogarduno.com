@@ -2,7 +2,7 @@
 title: "I built a World Cup model around jet lag, then graded it in public"
 description: "104 matches, 10,000 simulations, and the one thing it kept getting wrong."
 pubDate: 2026-07-20
-draft: true
+draft: false
 ogImage: /assets/img/jetlagxi-og.png
 ---
 
